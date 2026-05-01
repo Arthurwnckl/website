@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WinckelCorporation LLC — Digital Marketing & Consulting</title>
+    <meta name="description" content="WinckelCorporation LLC provides digital marketing, customer acquisition, and consulting services across US and EU markets.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: #0a0a0a;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        nav {
+            padding: 24px 48px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+        .logo {
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        .logo span { color: #6366f1; }
+        nav a {
+            color: rgba(255,255,255,0.6);
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+        nav a:hover { color: #fff; }
+        .hero {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 80px 24px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .badge {
+            display: inline-block;
+            padding: 6px 16px;
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            border-radius: 20px;
+            font-size: 13px;
+            color: #818cf8;
+            margin-bottom: 32px;
+            background: rgba(99, 102, 241, 0.08);
+        }
+        h1 {
+            font-size: clamp(32px, 5vw, 56px);
+            font-weight: 700;
+            line-height: 1.1;
+            letter-spacing: -1.5px;
+            margin-bottom: 24px;
+        }
+        h1 span { color: #6366f1; }
+        .subtitle {
+            font-size: 18px;
+            line-height: 1.6;
+            color: rgba(255,255,255,0.55);
+            max-width: 560px;
+            margin-bottom: 48px;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 700px;
+            margin-bottom: 48px;
+        }
+        .service-card {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 12px;
+            padding: 24px;
+            text-align: left;
+            transition: border-color 0.2s;
+        }
+        .service-card:hover { border-color: rgba(99, 102, 241, 0.4); }
+        .service-card h3 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .service-card p {
+            font-size: 13px;
+            color: rgba(255,255,255,0.45);
+            line-height: 1.5;
+        }
+        .cta-btn {
+            display: inline-block;
+            padding: 14px 32px;
+            background: #6366f1;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+        .cta-btn:hover { background: #4f46e5; }
+        .stats {
+            display: flex;
+            gap: 48px;
+            margin-top: 64px;
+            padding-top: 48px;
+            border-top: 1px solid rgba(255,255,255,0.08);
+        }
+        .stat h4 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #6366f1;
+        }
+        .stat p {
+            font-size: 13px;
+            color: rgba(255,255,255,0.4);
+            margin-top: 4px;
+        }
+        footer {
+            padding: 24px 48px;
+            border-top: 1px solid rgba(255,255,255,0.08);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+            color: rgba(255,255,255,0.3);
+        }
+        footer a { color: rgba(255,255,255,0.4); text-decoration: none; }
+        @media (max-width: 600px) {
+            nav { padding: 16px 20px; }
+            .hero { padding: 48px 20px; }
+            .services { grid-template-columns: 1fr; }
+            .stats { flex-direction: column; gap: 24px; }
+            footer { flex-direction: column; gap: 8px; padding: 16px 20px; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Winckel<span>Corp</span></div>
+        <a href="mailto:contact@arthurwinckel.net">Contact Us</a>
+    </nav>
+
+    <div class="hero">
+        <div class="badge">Digital Marketing & Consulting</div>
+        <h1>We help brands <span>grow</span> through performance marketing</h1>
+        <p class="subtitle">WinckelCorporation LLC provides digital marketing, customer acquisition strategy, and consulting services for businesses across the United States and European Union.</p>
+
+        <div class="services">
+            <div class="service-card">
+                <h3>Paid Advertising</h3>
+                <p>Campaign management and optimization across Meta, Google, and TikTok platforms.</p>
+            </div>
+            <div class="service-card">
+                <h3>Customer Acquisition</h3>
+                <p>Full-funnel acquisition strategy, targeting, and conversion optimization.</p>
+            </div>
+            <div class="service-card">
+                <h3>Consulting</h3>
+                <p>Strategic advisory for social media growth, content strategy, and market entry.</p>
+            </div>
+        </div>
+
+        <a href="mailto:contact@arthurwinckel.net" class="cta-btn">Get in Touch</a>
+
+        <div class="stats">
+            <div class="stat">
+                <h4>US & EU</h4>
+                <p>Markets served</p>
+            </div>
+            <div class="stat">
+                <h4>B2C</h4>
+                <p>Focused approach</p>
+            </div>
+            <div class="stat">
+                <h4>2025</h4>
+                <p>Founded</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <span>&copy; 2025 WinckelCorporation LLC. All rights reserved.</span>
+        <span>1500 N Grant St, STE C, Denver, CO 80203</span>
+    </footer>
+</body>
+</html>
